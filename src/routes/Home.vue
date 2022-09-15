@@ -1,5 +1,5 @@
 <template>
-  <Todocreator />
+  <TodoCreator />
   <TodoFilters />
   <div
     ref="todos"
@@ -15,13 +15,13 @@
 import Sortable from 'sortablejs'
 import { mapStores } from 'pinia'
 import { todoStore } from '~/store/todo.js'
-import Todocreator from '~/components/Todocreator.vue'
+import TodoCreator from '~/components/TodoCreator.vue'
 import TodoFilters from '~/components/TodoFilters.vue'
 import TodoItem from '~/components/TodoItem.vue'
 
 export default {
     components: {
-    Todocreator,
+    TodoCreator,
     TodoItem,
     TodoFilters
 },
